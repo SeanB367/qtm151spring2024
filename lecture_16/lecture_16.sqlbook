@@ -49,6 +49,7 @@ DROP TABLE IF EXISTS drivers;
 
 Create empty table from codebook
 -- SQLBook: Code
+-- Active: 1710938888966@@127.0.0.1@5432@postgres
 -- Create empty TABLE called "drivers"
 -- This example has five arguments separated by a comma
 -- that contain the "column_name" and "column_type", respectively
@@ -64,6 +65,7 @@ CREATE TABLE drivers(
 
 Add rows to table
 -- SQLBook: Code
+-- Active: 1710938888966@@127.0.0.1@5432@postgres
 -- "INSET INTO" adds rows with VALUES ... to the bottom of the table
 -- In SQL different lines need to be separated by a semicolon ";"
 -- You write system commands in capital letters to easily distinguish
@@ -96,6 +98,7 @@ Try it yourself!
 
 - Add two/three more rows on your own
 -- SQLBook: Code
+-- Active: 1710938888966@@127.0.0.1@5432@postgres
 -- Add your name/nationality and your neighbors'
 -- Select a new driver id (needs to be unique)
 -- Make sure to deparate arguments by a semicolon!
@@ -111,6 +114,7 @@ INSERT INTO drivers VALUES (6, 'Juan Pablo Montoya', 'Colombian', 6);
 
 Extracting columns from table
 -- SQLBook: Code
+-- Active: 1710938888966@@127.0.0.1@5432@postgres
 -- SELECT extracts certain COLUMNS
 -- FROM is used to indicate the source table
 
@@ -120,6 +124,7 @@ SELECT driver_id, nationality FROM drivers;
 
 Extract all columns from table
 -- SQLBook: Code
+-- Active: 1710938888966@@127.0.0.1@5432@postgres
 -- The symbol "*" is a shorthand for "all variables"
 SELECT * FROM drivers;
 -- SQLBook: Markup
@@ -229,6 +234,7 @@ HAVING SUM(victories) > 50;
 
 Subsetting **before** and **after** aggregating
 -- SQLBook: Code
+-- Active: 1710938888966@@127.0.0.1@5432@postgres
 -- HAVING is the command you use to subset *after* aggregating
 -- This differs from WHERE, which is used to subset *before* aggregating
 -- SQL differentiates the two types of subsetting
